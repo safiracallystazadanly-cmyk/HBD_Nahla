@@ -1,0 +1,196 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(
+        135deg,
+        #ffd6e7,
+        #ffeaf3,
+        #e8d9ff
+    );
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+.container {
+    background: rgba(255,255,255,0.8);
+    padding: 35px 25px;
+    border-radius: 30px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 10px 30px #d77da855;
+    animation: muncul 1.5s ease;
+    z-index: 2;
+}
+
+h1 {
+    color: #ec6c9e;
+    font-size: 30px;
+    animation: bounce 2s infinite;
+}
+
+h2 {
+    color: #b86acb;
+    margin: 15px;
+    font-size: 28px;
+}
+
+.subtitle {
+    color: #a76a91;
+    margin: 15px;
+}
+
+.stars {
+    font-size: 25px;
+    margin-bottom: 20px;
+    animation: sparkle 1s infinite alternate;
+}
+
+.cake {
+    font-size: 110px;
+    margin: 25px;
+    animation: wiggle 2s infinite;
+}
+
+.message {
+    color: #9c6687;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+button {
+    background: #f58bb5;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #d96d9c;
+    transform: scale(1.1);
+}
+
+.balloons span {
+    position: fixed;
+    bottom: -100px;
+    font-size: 45px;
+    animation: terbang 8s linear infinite;
+    z-index: 1;
+}
+
+.balloons span:nth-child(1) {
+    left: 10%;
+}
+
+.balloons span:nth-child(2) {
+    left: 30%;
+    animation-delay: 2s;
+}
+
+.balloons span:nth-child(3) {
+    left: 55%;
+    animation-delay: 4s;
+}
+
+.balloons span:nth-child(4) {
+    left: 75%;
+    animation-delay: 1s;
+}
+
+.balloons span:nth-child(5) {
+    left: 90%;
+    animation-delay: 3s;
+}
+
+.hidden {
+    display: none;
+}
+
+#surprise {
+    margin-top: 25px;
+    padding: 20px;
+    background: #ffe2ef;
+    border-radius: 20px;
+    animation: muncul 1s ease;
+    color: #a95883;
+    line-height: 1.8;
+}
+
+.footer {
+    margin-top: 25px;
+    color: #c17da3;
+    font-size: 13px;
+}
+
+.confetti-piece {
+    position: fixed;
+    top: -20px;
+    z-index: 10;
+    pointer-events: none;
+    animation: jatuh 3s linear forwards;
+}
+
+@keyframes terbang {
+    0% {
+        transform: translateY(0) rotate(0);
+    }
+    100% {
+        transform: translateY(-120vh) rotate(360deg);
+    }
+}
+
+@keyframes bounce {
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes wiggle {
+    0%, 100% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+}
+
+@keyframes sparkle {
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes muncul {
+    from {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes jatuh {
+    to {
+        transform: translateY(110vh) rotate(720deg);
+        opacity: 0;
+    }
+}

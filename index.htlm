@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Nahla!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="balloons">
+        <span>🎈</span>
+        <span>🎀</span>
+        <span>🎈</span>
+        <span>💗</span>
+        <span>🎈</span>
+    </div>
+
+    <div class="container">
+
+        <div class="stars">✨ ⭐ ✨ ⭐ ✨</div>
+
+        <h1>HAPPY BIRTHDAY!</h1>
+
+        <h2>NAHLA 💗</h2>
+
+        <p class="subtitle">
+            Today is your special day!
+        </p>
+
+        <div class="cake">
+            🎂
+        </div>
+
+        <p class="message">
+            Wishing you endless happiness,
+            love, and beautiful memories!
+        </p>
